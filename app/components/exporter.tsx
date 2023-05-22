@@ -323,19 +323,10 @@ export function ImagePreviewer(props: {
           </div>
 
           <div>
-            <div id="main-title" className={styles["main-title"]}>ChatGPT Dream</div>
-            <div id="sub-title" className={styles["sub-title"]}></div>
-            
-             fetch('https://v1.hitokoto.cn')
-             .then(response => response.json())
-             .then(data => {
-    const hitokoto = document.querySelector('#sub-title')
-    hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-    hitokoto.innerText = data.hitokoto
-  })
-  .catch(console.error) 
-            
-
+            <div className={styles["main-title"]}>ChatGPT Next Web</div>
+            <div className={styles["sub-title"]}>
+              github.com/Yidadaa/ChatGPT-Next-Web
+            </div>
             <div className={styles["icons"]}>
               <Avatar avatar={config.avatar}></Avatar>
               <span className={styles["icon-space"]}>&</span>
